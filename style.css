@@ -5,48 +5,24 @@ body {
 
 
 table th {
-  background: @premier-table-header-background;
-  color: @premier-table-header-color;
   text-align: center;
   border-bottom: 1px solid #ddd;
-
-  a {
-    color: @premier-table-header-color;
-  }
 }
 
 .table tbody tr td {
-  i.glyphicon {
-    font-size: 7pt;
-
-    &.glyphicon-chevron-up {
-      color: @premier-forecast-up-color;
-    }
-    &.glyphicon-chevron-down {
-      color: @premier-forecast-down-color;
-    }
-    &.glyphicon-minus {
-      color: @premier-forecast-default-color;
-    }
-  }
-	
   border-top: none;
   border-bottom: 1px solid #ddd;
 }
 
 .table {
 	border: none;
+}
 
-  tbody {
-    text-align: center;
-  }
-
-	th {
-		border: none;
-		background: white !important;
-		font-weight: bold;
-		color: #555 !important;
-	}
+th {
+  border: none;
+  background: white !important;
+  font-weight: bold;
+  color: #555 !important;
 
 }
 
@@ -56,10 +32,6 @@ td {
 
 .table-striped > tbody > tr:nth-child(odd) > td {
 	background-color: white;
-}
-
-.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th {
-  background: white;
 }
 
 .tooltip-custom {
@@ -74,13 +46,14 @@ td {
 }
 
 .tooltip-custom span {
+  font-weight: normal;
   position: absolute;
-  width: 130px;
+  min-width: 160px;
   height: auto;
   text-align: left;
   padding: 10px 15px;
   margin-top: 5px;
-  margin-left: -50px;
+  margin-left: -80px;
   background: rgba(0,0,0,0.9);
   color: #f9f9f9;
   z-index: 999;
@@ -94,7 +67,7 @@ td {
   content: '';
   position: absolute;
   top: 0px;
-  left: 29px;
+  left: 40px;
   margin-top: -8px;
   width: 0;
   height: 0;
@@ -107,10 +80,6 @@ number {
   font-weight: bold;
 }
 
-.manual td {
-  color: ;
-}
-
 .suggested {
   color: rgb(31, 119, 180);
 }
@@ -118,3 +87,54 @@ number {
 .actual {
   color: #6AAD54;
 }
+
+small {
+  font-size: 0.8em;
+  color: #999;
+  padding-left: 4px;
+}
+
+
+.accrual {
+  position: relative;
+}
+
+.accrual:after {
+  content: "*";
+  color: #F57C00;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 0.5em;
+  position: absolute;
+  top: 19px;
+  right: -2px;
+  
+}
+
+/* second layout */
+/*
+.suggested {
+  background: rgb(31, 119, 180);
+  color: white;
+}
+
+.actual {
+  background: #6AAD54;
+  color: white;
+}
+
+td:first-child strong {
+  color: #333;
+  background: white;
+}
+
+.accrual:after {
+  color: white;
+  content: "*";
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 0.5em;
+  position: absolute;
+  top: 19px;
+  right: -2px;
+}*/
