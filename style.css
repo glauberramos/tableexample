@@ -33,6 +33,10 @@ td {
 	background-color: white;
 }
 
+.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th {
+  background: white;
+}
+
 .tooltip-custom {
   font-size: 0.9em;
   position: relative;
