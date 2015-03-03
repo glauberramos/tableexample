@@ -23,7 +23,6 @@ th {
   background: white !important;
   font-weight: bold;
   color: #555 !important;
-
 }
 
 td {
@@ -53,7 +52,7 @@ td {
   text-align: left;
   padding: 10px 15px;
   margin-top: 5px;
-  margin-left: -80px;
+  margin-left: -105px;
   background: rgba(0,0,0,0.9);
   color: #f9f9f9;
   z-index: 999;
@@ -67,7 +66,7 @@ td {
   content: '';
   position: absolute;
   top: 0px;
-  left: 40px;
+  left: 80px;
   margin-top: -8px;
   width: 0;
   height: 0;
@@ -76,8 +75,17 @@ td {
   border-bottom: 8px solid rgba(0, 0, 0, 0.9);
 }
 
+.tooltip-custom small {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
 number {
   font-weight: bold;
+}
+
+td {
+  cursor: default;
 }
 
 .suggested {
