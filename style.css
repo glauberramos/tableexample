@@ -9,6 +9,10 @@ table th {
   border-bottom: 1px solid #ddd;
 }
 
+.negative {
+  color: #f44336;
+}
+
 .table tbody tr td {
   border-top: none;
   border-bottom: 1px solid #ddd;
@@ -42,21 +46,24 @@ td {
   position: relative;
   color: #FFF;
   opacity: 0;
+  display: none;
 }
 
 .table td:hover .tooltip-custom {
   opacity: 1;
+  display: block;
+  pointer-events: none;
 }
 
 .tooltip-custom span {
   font-weight: normal;
   position: absolute;
-  min-width: 160px;
+  width: 160px;
   height: auto;
   text-align: left;
   padding: 10px 15px;
-  margin-top: 5px;
-  margin-left: -105px;
+  margin-top: -30px;
+  margin-left: -230px;
   background: rgba(0,0,0,0.9);
   color: #f9f9f9;
   z-index: 999;
@@ -69,14 +76,15 @@ td {
 .tooltip-custom span:before {
   content: '';
   position: absolute;
-  top: 0px;
-  left: 80px;
+  top: 20px;
+  right: -15px;
   margin-top: -8px;
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-left: 8px solid rgba(0, 0, 0, 0.9);
   border-right: 8px solid transparent;
-  border-bottom: 8px solid rgba(0, 0, 0, 0.9);
+  border-bottom: 8px solid transparent;
 }
 
 .tooltip-custom small {
@@ -122,31 +130,3 @@ small {
   right: -2px;
   
 }
-
-/* second layout */
-/*
-.suggested {
-  background: rgb(31, 119, 180);
-  color: white;
-}
-
-.actual {
-  background: #6AAD54;
-  color: white;
-}
-
-td:first-child strong {
-  color: #333;
-  background: white;
-}
-
-.accrual:after {
-  color: white;
-  content: "*";
-  font-size: 1.3em;
-  font-weight: bold;
-  line-height: 0.5em;
-  position: absolute;
-  top: 19px;
-  right: -2px;
-}*/
